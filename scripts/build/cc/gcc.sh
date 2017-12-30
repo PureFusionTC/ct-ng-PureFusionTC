@@ -467,7 +467,7 @@ do_gcc_core_backend() {
 
         CT_GetPkgVersion GLIBC glibc_version
         glibc_version=`echo "${glibc_version}" | sed 's/\([1-9][0-9]*\.[1-9][0-9]*\).*/\1/'`
-        extra_config+=("--with-glibc-version=${glibc_version}")
+#        extra_config+=("--with-glibc-version=${glibc_version}")
     fi
 
     case "${CT_CC_GCC_LDBL_128}" in
